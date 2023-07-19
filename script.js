@@ -12,8 +12,6 @@ click.addEventListener("click",() => {
 {
     e.preventDefault(); 
 para.innerHTML=title.value;
-let button=`<button id="update"></button>
-<button id="delete"></button>`;
 form.style.display="none";
 para.style.display="block";
 })
