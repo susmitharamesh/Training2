@@ -1,0 +1,57 @@
+body{
+    border:2px solid black;
+    background-color: pink;
+ }    
+.container
+{
+/* background-color: rgba(144, 238, 144, 0.681); */
+width:100vh;
+height:100vh;   
+}
+input[type=text]
+{
+width:200px;
+padding: 10px;
+}
+textarea[type=text]
+{
+width:200px;
+padding: 10px;
+}
+#form
+{
+color:rgb(8, 7, 7);
+background-color: rgb(158, 180, 158);
+display:none;
+position: fixed;
+top: 50%;
+left: 50%;
+width:50%;
+font-size: 12px;
+padding: 10px;
+transform: translate(-50%, -50%);
+z-index: 1000;
+
+}
+#list
+{
+color:rgb(218, 18, 18);
+background-color: rgb(82, 207, 82);
+display:none;
+position: fixed;
+top: 50%;
+left: 50%;
+width:50%;
+font-size: 20px;
+padding: 10px;
+transform: translate(-50%, -50%);
+z-index: 1000;  
+}
+#open
+{
+font-size: 40px;
+margin-left: 48%;
+}
+label{
+font-size: 16px;
+}  

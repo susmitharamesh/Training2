@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style src="style.css"></style>  
+
+    </style>
     <title>Document</title>
 </head>
 <body>
+    <center><h1>HOME</h1></center>
+    <main>
+        <a href="#form"><button id="open">+</button></a>
+    </main>
+        <div class="container">
+            <form id="form">
+                <center><strong>NOTES</strong></center>
+                <label for="title">Title</label>
+                <input type="text"id="textValue"><br>
+            <label for="content">Description</label>
+                <textarea type="text" id="textContent"></textarea><br>
+            <button type="button" id="submit">Save</button>
+            </form>
+            <p id="list"></p>
+            </div>
     
 </body>
+<script  src="script.js"></script>
 </html>
