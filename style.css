@@ -1,57 +1,119 @@
-body{
-    border:2px solid black;
-    background-color: pink;
- }    
-.container
-{
-/* background-color: rgba(144, 238, 144, 0.681); */
-width:100vh;
-height:100vh;   
+body {
+    /* border: 2px solid black; */
+    background-color: rgba(117, 186, 164, 0.639);
+    font-family: 'Lumanosimo', cursive;
+    position: fixed;
 }
-input[type=text]
-{
-width:200px;
-padding: 10px;
+
+.container {
+    /* background-color: rgba(144, 238, 144, 0.681); */
+    width: 100vh;
+    height: 100vh;
 }
-textarea[type=text]
-{
-width:200px;
-padding: 10px;
+
+input[type=text] {
+    width: 200px;
+    padding: 10px;
 }
-#form
-{
-color:rgb(8, 7, 7);
-background-color: rgb(158, 180, 158);
-display:none;
-position: fixed;
-top: 50%;
-left: 50%;
-width:50%;
-font-size: 12px;
-padding: 10px;
-transform: translate(-50%, -50%);
-z-index: 1000;
+
+textarea[type=text] {
+    width: 200px;
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+    
+}
+#form {
+    color: rgb(8, 7, 7);
+    background-color: rgb(187, 246, 187);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 
 }
-#list
-{
-color:rgb(218, 18, 18);
-background-color: rgb(82, 207, 82);
-display:none;
-position: fixed;
-top: 50%;
-left: 50%;
-width:50%;
-font-size: 20px;
-padding: 10px;
-transform: translate(-50%, -50%);
-z-index: 1000;  
+
+#list {
+    color: rgb(218, 18, 18);
+    background: linear-gradient(to top left, #82e882 0%, #e969a9 100%);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    font-size: 20px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1000;
+    max-width: 500px;
+    box-shadow: 0 10px 7px rgba(0, 0, 0, 0.1);
+    overflow:auto;
+    height:200px;
 }
-#open
-{
-font-size: 40px;
-margin-left: 48%;
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:linear-gradient(rgb(191, 112, 112),rgb(26, 228, 26),rgb(19, 19, 174)) ;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(rgb(225, 190, 64),rgb(135, 170, 135),rgb(4, 4, 58)) ;
+  }
+#closeIcon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}   
+.popupbg {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(201, 201, 201, 0.483);
+            z-index: 999;
+        }
+#open {
+    font-size: 40px;
+    margin-left: 50%;
+   
 }
-label{
-font-size: 16px;
-}  
+
+label {
+    font-size: 16px;
+}
+
+.delete {
+    font-size: 12px;
+    width: 50px;
+}
+
+.update {
+    font-size: 12px;
+    width: 50px;
+}
+.hide
+{
+    display:none;
+}
